@@ -1,0 +1,490 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+.wrapper{
+  width: 100%;
+  margin: 0 auto;
+  text-align: right;
+  clear: right;
+}
+.wrapper img{
+  width: 500px;
+  height: 400px;
+}
+
+label{
+  margin: 0 40x 0 0;
+  font-size: 26px;
+  line-height: 70px;
+  display: none;
+  width: 26px;
+  float: right;
+}
+#toggle{
+  display: none;
+}
+@media only screen and (max-width:500px) {
+  label {
+    display: block;
+    cursor: pointer;
+  }
+  nav {
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+  nav a {
+    display: block;
+    margin: 0;
+    border-bottom: 1px solid #eaeaeb;
+  }
+  #toggle:checked + nav{
+    display: block;
+  }
+}
+
+
+header{
+  height: 100px;
+  background: #cc3131;
+  width: 100%;
+  z-index: 12;
+}
+
+.logo{
+  
+  float: left;
+  line-height: 100px;
+  text-decoration: none;
+  
+}
+
+.logo a{
+  text-decoration: none;
+  font-size: 30px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #fff;
+  letter-spacing: 5px;
+  
+
+}
+.logo img{
+  float: left;
+  height: 70px;
+  padding-top: 10px;
+  padding-right: 12px;
+  padding-left: none;
+}
+
+
+nav{
+  float: right;
+  line-height: 30px;
+  padding-top: 35px;
+  
+}
+
+nav a{
+  text-decoration: none;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  letter-spacing: 2px;
+  font-size: 20px;
+  margin: 0 1px;
+  color: #fff;
+  padding: 10px;
+  text-transform: uppercase;
+}
+.active, nav a:hover{
+  background: #2bab0d;
+  border-radius: 3px;
+  transition: 1.5s;
+}
+
+.banner-vid{
+  width: 100%;
+  top: 100px;
+  height: 300px;
+  background-size: cover;
+  background-position: center center;
+  
+  /*
+  background-image: url(/images/GettyImages-960609922.jpg);*/
+  
+}
+.banner-vid video{
+  width: 100%;
+  margin: 0;
+  border: black 2px solid;
+  background-size: cover;
+  background-position: center center;
+  display: ;
+}
+.banner-area{
+  width: 100%;
+  top: 100px;
+  height: 300px;
+  background-size: cover;
+  background-position: center center;
+  background-image: url(/images/GettyImages-960609922.jpg);
+}
+
+.banner-area h2{
+  padding-top: 8%;
+  font-size: 70px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  
+}
+
+.content-area{
+  width: 100%;
+  position: relative;
+  background: #ddd;
+  text-align: center;
+  flex-wrap: wrap;
+  border: #3d3d3d 2px solid;
+  
+
+}
+
+
+.content-area h2{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  letter-spacing: 4px;
+  padding-top: 30px;
+  font-size: 40px;
+  margin: 0;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.content-area p{
+  padding: 2% 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 30px;
+  flex-wrap: wrap;
+  
+
+}
+
+footer{
+  background: #262626;
+  padding: 10px;
+  
+
+}
+
+footer p{
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+}
+
+.content-area2{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  direction: ltr;
+
+}
+
+/*facts page*/
+
+.facts{
+  border: #262626 solid;
+  padding: 40px;
+  margin: 20px;
+}
+
+.facts h1{
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.facts ul li{
+  text-align: left;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding: 15px;
+}
+
+/*attractions page*/
+
+.attract{
+  text-align: center;
+}
+
+.attract img{
+ width: 50%;
+ height: 300px;
+ border-radius: 5px;
+
+  
+}
+.attract h2{
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding: 30px;
+}
+.rr{
+  background: #ddd;
+  border: black solid;
+}
+.attract h3{
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding: 30px;
+}
+.attract p{
+  padding: 10px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  border: solid;
+  border-radius: 5px;
+  background: rgb(243, 242, 237);
+  margin: 5px;
+}
+
+video{
+  display: block;
+  margin: 1em auto;
+  width: 50%;
+  min-width: 320px;
+  min-height: 180px;
+  max-width: ;
+  max-height: 720px;
+}
+
+.news ul li{
+  text-decoration: none;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  letter-spacing: 4px;
+  font-size: 20px;
+  margin: 0 10px;
+  color: #fff;
+}
+
+/*lifestyle page*/
+.card2 h2{
+  text-decoration: none;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.card2 p{
+  text-decoration: none;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.lifestyle{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: rgb(214, 213, 213);
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card2{
+  width: 270px;
+  background: rgb(245, 158, 158);
+  margin: 10px;
+  border-radius: 15px;
+}
+
+.card-image2{
+  height: 150px;
+  margin-bottom: 15px;
+  background-size: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+/*cards for lifestyle*/
+
+.car-1{
+  background-image: url(/images/shutterstock_248799484-1.jpg);
+}
+.car-2{
+   background-image: url(/images/NYCExperiencesFamilies2018_HERO.jpg);
+}
+.car-3{
+   background-image: url(/images/GettyImages-960609922.jpg);
+}
+
+/*CARDS FOR ABOUT*/
+
+.car-33{
+  background-image: url(/images/stock-photo-city-yellow-black-and-white-new-york-city-taxis-4a4bd26b-aedb-4995-8743-b2e7d6caa668.jpg);
+}
+.car-44{
+  background-image: url(/images/MAG-Copy-of-edited-eyeem-100000296-133926640-freshblue.jpg);
+}
+
+/*lifestyle cards styles*/
+.card2 a{
+  color: white;
+  display: block;
+  text-align: center;
+  padding: 15px 20px;
+  background-color: black;
+  margin: 20px 50px;
+}
+
+.card2:hover{
+  transition: ease-in;
+  transform: scale(1.03);
+  cursor: pointer;
+  color: white;
+  background-color: rgb(226, 43, 52);
+}
+
+/*fashion page*/
+
+.fashion{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  background: #3363ff;
+}
+
+.container{
+  min-width: 1px; 
+}
+
+.container ul{
+  top: 10;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: relative;
+  list-style: none;
+  width: 955px;
+  height: 450px;
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 1px 1px 3px 1px; 
+}
+
+.container ul li{
+  position: relative;
+  width: 190px;
+  height: 450px;
+  float: left;
+  border-left: 1px solid white;
+  transition: all 0.7s;
+  box-shadow: -2px 0 10px 2px;
+}
+
+.container ul li:first-child{
+  border: none;
+}
+
+span{
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 50%;
+  color: white;
+  white-space: nowrap;
+  padding: 20px;
+  background: linear-gradient(to right, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%);
+}
+
+.container ul li img{
+  width: 800px;
+  height: 450px;
+}
+
+.container ul:hover li{
+  width: 50px;
+}
+
+.container ul li:hover{
+  width: 750px;
+}
+
+/*tourist attractions page*/
+
+.tourist{
+  background: #ddd;
+  border: 2px solid;
+}
+
+.tour{
+  text-align: center;
+}
+.tour h1{
+  text-transform: uppercase;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-decoration: none;
+  text-align: center;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  padding-bottom: 25px;
+  color: red;
+}
+
+.tour h2{
+  text-transform: capitalize;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-decoration: none;
+  text-align: center;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  padding-bottom: 25px;
+  color: #2bab0d;
+}
+
+.tour img{
+  border-radius: 3px;
+}
+
+.tour p{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+
+/*lifestyle issues*/
+
+.lissues{
+  border: black 2px solid;
+  background-image: url(/images/iStock-683773982-1600x800.jpg);
+  background-size: cover;
+  height: 700px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.liss div{
+  margin: 10px;
+  border: black solid 2px;
+  border-radius: 10px;
+  background: linear-gradient(to right, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%);
+}
+
+.liss div h1{
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-top: 10px;
+  padding-bottom: 6px;
+  color: white;
+}
+
+.liss div p{
+  color: rgb(183, 183, 240);
+  font-weight: bold;
+}
+
+
+
+
